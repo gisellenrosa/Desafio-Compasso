@@ -1,0 +1,11 @@
+//general conf and vars
+@import "./_conf";
+@import "./global";
+
+//components
+@import "../../components/SearchBar/styles.scss";
+
+//pages
+@import "../../pages/HomePage/styles.scss";
+@import "../../pages/RepositoriesPage/styles.scss";
+@import "../../pages/StarredPage/styles.scss";

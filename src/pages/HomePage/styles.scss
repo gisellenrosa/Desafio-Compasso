@@ -1,0 +1,53 @@
+.user {
+  background-color: $COLOR-GRAY-1;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding:60px 40px 0 40px;
+}
+
+.user__infos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom:40px;
+}
+
+.user__buttons {
+  display: flex;
+  justify-content: space-between;
+  gap:10px;
+}
+
+.button__repos {
+  padding: 14px ;
+  border-radius: 10px;
+  border: 1px solid $COLOR-BLUE-2;
+  background-color:$COLOR-BLUE-2;
+  color: white;
+  font-size: 16px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 300ms;
+  &:hover{
+    background-color: $COLOR-BLUE-3;
+    border: 1px solid $COLOR-BLUE-3;
+  }
+}
+.button__starred {
+  padding: 14px ;
+  border-radius: 10px;
+  border: 1px solid $COLOR-YELLOW-1;
+  background-color:$COLOR-YELLOW-1;
+  color: $COLOR-GRAY-3;
+  font-size: 16px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 300ms;
+  &:hover{
+    background-color: $COLOR-YELLOW-2;
+    border: 1px solid $COLOR-YELLOW-2;
+  }
+}

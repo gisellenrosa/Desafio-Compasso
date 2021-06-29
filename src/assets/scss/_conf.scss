@@ -1,0 +1,78 @@
+/*|---------------|App Color Schema|---------------*/
+$COLOR-GRAY-1: #f5f8fa;
+$COLOR-GRAY-2: #d3e2e5;
+$COLOR-GRAY-3: #586069;
+$COLOR-GRAY-4: #959da5;
+$COLOR-BLUE-1: #c8e1ff;
+$COLOR-BLUE-2: #0366d6;
+$COLOR-BLUE-3: #2188ff;
+
+$COLOR-YELLOW-1: #ffd33d;
+$COLOR-YELLOW-2: #ffea7f;
+
+
+$BLUE: #00376C;
+$PINK: #B51942;
+$WHITE: #fff;
+$WHITE-SECONDARY: #fafbfc;
+$GRAY5: #6a737d;
+$GRAY6: #586069;
+$GRAY7: #444d56;
+$GRAY8: #2f363d;
+$GRAY9: #24292e;
+$BLUELIGHT: #f1f8ff;
+$BLUE: #dbedff;
+$GRAY3: #79b8ff;
+$GRAY3: #2188ff;
+
+$GRAY3: #005cc5;
+$GRAY3: #044289;
+$GRAY3: #032f62;
+$GRAY3: #05264c;
+$COLORgreen-0: #f0fff4;
+$COLORgreen-1: #dcffe4;
+$COLORgreen-2: #bef5cb;
+$COLORgreen-3: #85e89d;
+$COLORgreen-4: #34d058;
+$COLORgreen-5: #28a745;
+$COLORgreen-6: #22863a;
+$COLORgreen-7: #176f2c;
+$COLORgreen-8: #165c26;
+$COLORgreen-9: #144620;
+$COLORyellow-0: #fffdef;
+$COLORyellow-1: #fffbdd;
+$COLORyellow-2: #fff5b1;
+
+$COLORyellow-4: #ffdf5d;
+$COLORyellow-5: #ffd33d;
+$COLORyellow-7: #dbab09;
+$COLORyellow-8: #b08800;
+$COLORyellow-9: #735c0f;
+$COLORorange-0: #fff8f2;
+$COLORorange-1: #ffebda;
+$COLORorange-2: #ffd1ac;
+$COLORorange-3: #ffab70;
+$COLORorange-4: #fb8532;
+$COLORorange-5: #f66a0a;
+$COLORorange-6: #e36209;
+$COLORorange-7: #d15704;
+
+/*|---------------|BREAKPOINTS|---------------*/
+
+// Usage example:  @media #{$BREAKPOINT-DESK}
+
+$BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
+$BREAKPOINT-TABLET-LAND: "only screen and (min-width: 975px)";
+$BREAKPOINT-TABLET: "only screen and (min-width: 600px)";
+$BREAKPOINT-MOBILE-LAND: "only screen and (min-width: 480px)";
+
+/*|---------------|MIXINS|---------------*/
+
+@mixin margin-page {
+  width: calc(100% - 40px);
+  margin: 0 auto;
+
+  @media #{$BREAKPOINT-DESK} {
+    max-width: 1000px;
+  }
+}
